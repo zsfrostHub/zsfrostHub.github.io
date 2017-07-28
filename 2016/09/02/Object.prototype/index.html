@@ -72,7 +72,7 @@
 
     
         <meta property="article:published_time" content="9月 02, 2016" />
-        <meta property="article:modified_time" content="7月 26, 2017" />
+        <meta property="article:modified_time" content="7月 28, 2017" />
     
 
     <!-- The Twitter Card protocol -->
@@ -113,7 +113,7 @@
     "headline": "Object.prototype",
     "url": "http://yoursite.com/2016/09/02/Object.prototype/index.html",
     "datePublished": "9月 02, 2016",
-    "dateModified": "7月 26, 2017",
+    "dateModified": "7月 28, 2017",
     "description": "Object.prototype内的属性基础介绍",
     "mainEntityOfPage": {
         "@type": "WebPage",
@@ -543,6 +543,13 @@
 <p>如果函数B 的原型属性(prototype)所指的对象在 对象A 的原型链上，那么就返回true，否则返回false</p>
 </li>
 </ol>
+<blockquote>
+<p>  补充</p>
+</blockquote>
+<p>构造函数Foo的原型属性Foo.prototype的&#95;&#95;proto&#95;&#95;属性指向的是Object.prototype(它构造函数的原型属性)</p>
+<p>也就是说Foo.prototype是Object实例化而来的</p>
+<p>或者说所有对象的&#95;&#95;proto&#95;&#95;属性都指向它构造函数的原型属性，它的原型对象</p>
+<p>只要有&#95;&#95;proto&#95;&#95;属性，就有它的构造函数  除了Object.prototype</p>
 
     
 
