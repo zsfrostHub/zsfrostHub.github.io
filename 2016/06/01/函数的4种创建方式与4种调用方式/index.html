@@ -12,7 +12,7 @@
     
     <title>
         
-            Object.prototype | 
+            函数的4种创建方式域4种调用方式 | 
         
         MyBLlog
     </title>
@@ -35,7 +35,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="zsfrost">
-    <meta name="description" itemprop="description" content="Object.prototype内的属性基础介绍">
+    <meta name="description" itemprop="description" content="函数的4种创建方式与4种调用方式简单介绍">
     <meta name="keywords" content="null">
 
     <!-- Site Verification -->
@@ -65,26 +65,26 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yoursite.com">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Object.prototype | MyBLlog">
+    <meta property="og:title" content="函数的4种创建方式域4种调用方式 | MyBLlog">
     <meta property="og:image" content="/img/favicon.png" />
-    <meta property="og:description" content="Object.prototype内的属性基础介绍">
+    <meta property="og:description" content="函数的4种创建方式与4种调用方式简单介绍">
     
 
     
-        <meta property="article:published_time" content="9月 02, 2016" />
-        <meta property="article:modified_time" content="7月 28, 2017" />
+        <meta property="article:published_time" content="6月 01, 2016" />
+        <meta property="article:modified_time" content="8月 02, 2017" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="Object.prototype | MyBLlog">
-    <meta name="twitter:description" content="Object.prototype内的属性基础介绍">
+    <meta name="twitter:title" content="函数的4种创建方式域4种调用方式 | MyBLlog">
+    <meta name="twitter:description" content="函数的4种创建方式与4种调用方式简单介绍">
     <meta name="twitter:image" content="/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="http://yoursite.com" />
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/2016/09/02/Object.prototype/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2016/06/01/函数的4种创建方式与4种调用方式/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -110,11 +110,11 @@
         },
         "description": "Hi, nice to meet you"
     },
-    "headline": "Object.prototype",
-    "url": "http://yoursite.com/2016/09/02/Object.prototype/index.html",
-    "datePublished": "9月 02, 2016",
-    "dateModified": "7月 28, 2017",
-    "description": "Object.prototype内的属性基础介绍",
+    "headline": "函数的4种创建方式域4种调用方式",
+    "url": "http://yoursite.com/2016/06/01/函数的4种创建方式与4种调用方式/index.html",
+    "datePublished": "6月 01, 2016",
+    "dateModified": "8月 02, 2017",
+    "description": "函数的4种创建方式与4种调用方式简单介绍",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "http://yoursite.com"
@@ -335,7 +335,7 @@
 
     
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#构造函数-amp-实例化"><span class="post-toc-number">1.</span> <span class="post-toc-text">构造函数&实例化</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Object-prototype相关属性"><span class="post-toc-number">2.</span> <span class="post-toc-text">Object.prototype相关属性</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#prototype-常见的使用方法"><span class="post-toc-number">3.</span> <span class="post-toc-text">prototype 常见的使用方法</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#函数的4种创建方式"><span class="post-toc-number">1.</span> <span class="post-toc-text">函数的4种创建方式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#声明式"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">声明式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#函数表达式"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">函数表达式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Function创建式"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">Function创建式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#eval-方法创建"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">eval()方法创建</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#函数的4种调用方式"><span class="post-toc-number">2.</span> <span class="post-toc-text">函数的4种调用方式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#函数调用模式"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">函数调用模式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#方法调用模式"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">方法调用模式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#构造器调用模式"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">构造器调用模式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#上下文调用模式"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">上下文调用模式</span></a></li></ol></li></ol>
         <!--
         <li class="mdl-menu__item">
             Some Action
@@ -373,7 +373,7 @@
         
     
             <p class="article-headline-p">
-                Object.prototype
+                函数的4种创建方式域4种调用方式
             </p>
         </div>
 
@@ -392,7 +392,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>zsfrost</strong>
-        <span>9月 02, 2016</span>
+        <span>6月 01, 2016</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -432,7 +432,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Object.prototype&url=http://yoursite.com/2016/09/02/Object.prototype/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=函数的4种创建方式域4种调用方式&url=http://yoursite.com/2016/06/01/函数的4种创建方式与4种调用方式/index.html&pic=&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -441,7 +441,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Object.prototype&url=http://yoursite.com/2016/09/02/Object.prototype/index.html&via=zsfrost" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=函数的4种创建方式域4种调用方式&url=http://yoursite.com/2016/06/01/函数的4种创建方式与4种调用方式/index.html&via=zsfrost" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -450,7 +450,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2016/09/02/Object.prototype/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2016/06/01/函数的4种创建方式与4种调用方式/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -459,7 +459,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2016/09/02/Object.prototype/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2016/06/01/函数的4种创建方式与4种调用方式/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -483,119 +483,39 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h3 id="构造函数-amp-实例化"><a href="#构造函数-amp-实例化" class="headerlink" title="构造函数&amp;实例化"></a>构造函数&amp;实例化</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name,age</span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.name = name,</div><div class="line">    <span class="keyword">this</span>.age = age,</div><div class="line">    <span class="keyword">this</span>.sayHi = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">"hi,I'm"</span>+name);</div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line"><span class="keyword">var</span> p = <span class="keyword">new</span> Person(<span class="string">"老张"</span>,<span class="number">38</span>);</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<h3 id="Object-prototype相关属性"><a href="#Object-prototype相关属性" class="headerlink" title="Object.prototype相关属性"></a>Object.prototype相关属性</h3><ol>
-<li>访问构造函数</li>
-</ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">p.constructor;</div><div class="line"><span class="built_in">console</span>.log(p.constructor);</div></pre></td></tr></table></figure>
-<ol>
-<li>访问原型对象</li>
-</ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">p.constructor.prototype;</div><div class="line"><span class="built_in">console</span>.log(p.constructor.prototype);</div></pre></td></tr></table></figure>
-<ol>
-<li><p>访问Object原型对象</p>
-</li>
-<li><ul>
-<li>将p的原型对象的constructor属性复制给oldctr,然后后删除该属性</li>
-</ul>
-</li>
-</ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> oldctr = p.constructor.prototype.constructor;</div><div class="line"><span class="keyword">delete</span> p.constructor.prototype.constructor;</div></pre></td></tr></table></figure>
-<ol>
-<li><ul>
-<li>p在本身属性和原型对象中找不到constructor属性，然后在原型链中继续向上查找，在上一级原型链(Object.prototype)中找到constructor属性</li>
-</ul>
-</li>
-</ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(p.constructor);             <span class="comment">//Object</span></div><div class="line"><span class="built_in">console</span>.log(p.constructor.prototype);   <span class="comment">//Object.prototype</span></div></pre></td></tr></table></figure>
-<ol>
-<li><ul>
-<li>将删除掉的p的原型对象的constructor属性还原</li>
-</ul>
-</li>
-</ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">p.constructor.prototype.constructor = oldctr;</div><div class="line"><span class="built_in">console</span>.log(p.constructor);           <span class="comment">//Person</span></div><div class="line"><span class="built_in">console</span>.log(p.constructor.prototype); <span class="comment">//Person.prototype</span></div></pre></td></tr></table></figure>
-<ol>
-<li>hasOwnPrototype</li>
-</ol>
+        <h2 id="函数的4种创建方式"><a href="#函数的4种创建方式" class="headerlink" title="函数的4种创建方式"></a>函数的4种创建方式</h2><h3 id="声明式"><a href="#声明式" class="headerlink" title="声明式"></a>声明式</h3><p><strong>在预解析阶段，函数声明会被提升，并且关联其函数体</strong></p>
+<p><strong>当函数嵌入到语句中或参与运算就会转换为函数表达式</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//函数声明</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span> (<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</div><div class="line">&#125;</div><div class="line">fn(); <span class="comment">//window</span></div></pre></td></tr></table></figure>
+<h3 id="函数表达式"><a href="#函数表达式" class="headerlink" title="函数表达式"></a>函数表达式</h3><p><strong>在预解析阶段，函数声明会被提升，但是函数体不会，其是作为一个复杂数据类型被赋值给声明的变量</strong></p>
+<p><strong>在函数表达式中，函数体若也函数名，函数名只能在函数内部使用，外部无法访问，如下例</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//函数表达式</span></div><div class="line"><span class="keyword">var</span> fn = <span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  foo();</div><div class="line">&#125;</div><div class="line">foo();  <span class="comment">//foo is not defined</span></div></pre></td></tr></table></figure>
+<h3 id="Function创建式"><a href="#Function创建式" class="headerlink" title="Function创建式"></a>Function创建式</h3><p><strong>函数在js中是一个普通的数据类型，普通的引用类型</strong></p>
+<p><strong>Function是用来创建对象的，不涉及任何声明问题，这个是需要执行代码才会创建的</strong></p>
+<p><strong>Function的执行与函数表达式一样</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> fn = <span class="keyword">new</span> <span class="built_in">Function</span>(<span class="string">"console.log(this)"</span>); <span class="comment">//window</span></div></pre></td></tr></table></figure>
+<h3 id="eval-方法创建"><a href="#eval-方法创建" class="headerlink" title="eval()方法创建"></a>eval()方法创建</h3><p><strong>与Function创建类似，不过eval()方法拥有高权限，其可以将字符串转换为js代码执行，容易造成全局污染，并不推荐,在ES5中已经被废除</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> func = <span class="built_in">eval</span>(<span class="string">"function fn ()&#123;\</span></div><div class="line">  console.log(this);\</div><div class="line">&#125;")</div><div class="line">fn()     <span class="comment">//window</span></div><div class="line">func();  <span class="comment">//func is not a function</span></div></pre></td></tr></table></figure>
+<p><strong>在严格模式下，限制了其功能，eval()内部的对象外部无法访问</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">"use strict"</span>;</div><div class="line"><span class="built_in">eval</span>(<span class="string">"var num = 123; console.log(num)"</span>) <span class="comment">//123</span></div><div class="line"><span class="built_in">console</span>.log(num)  <span class="comment">//num is not defined</span></div></pre></td></tr></table></figure>
+<h2 id="函数的4种调用方式"><a href="#函数的4种调用方式" class="headerlink" title="函数的4种调用方式"></a>函数的4种调用方式</h2><h3 id="函数调用模式"><a href="#函数调用模式" class="headerlink" title="函数调用模式"></a>函数调用模式</h3><p><strong>独自调用，没有任何对象引导</strong></p>
+<p><strong>this指向为全局对象window</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">(<span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);  <span class="comment">//window</span></div><div class="line">&#125;)();</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span> (<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</div><div class="line">&#125;</div><div class="line">fn();  <span class="comment">//window</span></div><div class="line"><span class="keyword">var</span> func = <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</div><div class="line">&#125;</div><div class="line">func();  <span class="comment">//window</span></div></pre></td></tr></table></figure>
+<h3 id="方法调用模式"><a href="#方法调用模式" class="headerlink" title="方法调用模式"></a>方法调用模式</h3><p><strong>一定是由一个对象引导调用的</strong></p>
+<p><strong>this指向为调用函数的对象</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> fn = &#123;</div><div class="line">  <span class="attr">sayHi</span>:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>);</div><div class="line">  &#125;</div><div class="line">&#125;;</div><div class="line">fn.sayHi(); <span class="comment">//fn</span></div><div class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>];</div><div class="line">arr.push(fn.sayHi);</div><div class="line">arr[<span class="number">3</span>](); <span class="comment">//arr</span></div><div class="line">(<span class="function"><span class="keyword">function</span> (<span class="params">fn</span>)</span>&#123;</div><div class="line">  fn(); <span class="comment">//window</span></div><div class="line">  <span class="built_in">arguments</span>[<span class="number">0</span>](); <span class="comment">//arguments</span></div><div class="line">&#125;)(fn.sayHi);</div></pre></td></tr></table></figure>
+<h3 id="构造器调用模式"><a href="#构造器调用模式" class="headerlink" title="构造器调用模式"></a>构造器调用模式</h3><p><strong>在函数前用new引导</strong></p>
+<p><strong>this指向为被创建出的实例对象</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Fn</span> (<span class="params">name</span>)</span>&#123;</div><div class="line">  <span class="keyword">this</span>.name = name;</div><div class="line">  <span class="keyword">this</span>.sayHi = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>);</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> <span class="keyword">this</span>;  <span class="comment">//返回值为this 指向创建出的实例对象</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> func = <span class="keyword">new</span> Fn(<span class="string">"老张"</span>);</div><div class="line">func.sayHi(); <span class="comment">//func</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Fn2</span> (<span class="params">name</span>)</span>&#123;</div><div class="line">  <span class="keyword">this</span>.name = name;</div><div class="line">  <span class="keyword">this</span>.sayHi = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>);</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> [<span class="number">110</span>]; <span class="comment">//返回值为数组，复杂类型，所以无法调用内部name,sayHi属性</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> func2 = <span class="keyword">new</span> Fn2(<span class="string">"老张"</span>);</div><div class="line"><span class="built_in">console</span>.log(func2) <span class="comment">//[110]</span></div><div class="line">func2.sayHi(); <span class="comment">//func.sayHi is not a function</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Fn3</span> (<span class="params">name</span>)</span>&#123;</div><div class="line">  <span class="keyword">this</span>.name = name;</div><div class="line">  <span class="keyword">this</span>.sayHi = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>);</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> <span class="number">1</span>; <span class="comment">//返回值为数字，基本类型，不会影响创建出的实例对象</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> func3 = <span class="keyword">new</span> Fn3(<span class="string">"老张"</span>);</div><div class="line">func3.sayHi();      <span class="comment">//Fn</span></div><div class="line"><span class="built_in">console</span>.log(func3); <span class="comment">//Fn</span></div></pre></td></tr></table></figure>
+<h3 id="上下文调用模式"><a href="#上下文调用模式" class="headerlink" title="上下文调用模式"></a>上下文调用模式</h3><p><strong>上下文调用语法:fn.call(…),fn.apply(…)</strong></p>
 <blockquote>
-<p>  当前对象含有name属性，且不是通过继承得来的</p>
+<p>在利用上下文调用的时候, call 或 apply 的第 0 个参数表示就是 函数中 this 的指向</p>
+<p>如果传入 null 或 undefined 或不传, this 就是 window</p>
+<p>如果传入的是 对象, this 就是传入对象</p>
+<p>如果传入的是 基本类型( 数字, 字符串, boolean )就会将基本类型转换成对应包装类型, 赋值给 this</p>
+<p>call 在调用的时候, 函数的参数散列的在 call 中提供</p>
+<p>apply 在调用的时候, 函数的参数以数组的形式提供</p>
 </blockquote>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">p.hasOwnProperty(<span class="string">"name"</span>);</div><div class="line"><span class="comment">//console.log(p.hasOwnProperty("name"));    //true</span></div></pre></td></tr></table></figure>
-<blockquote>
-<p>  通过继承得来的属性toString 检测为false</p>
-</blockquote>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">p.hasOwnProperty(<span class="string">"toString"</span>);</div><div class="line"><span class="built_in">console</span>.log(p.hasOwnProperty(<span class="string">"toString"</span>));  <span class="comment">//false</span></div></pre></td></tr></table></figure>
-<ol>
-<li>isprototypeOf</li>
-</ol>
-<blockquote>
-<p>  对象1.isprotypeOf(对象2)，对象1 是否是对象2的原型对象</p>
-</blockquote>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">p.constructor.prototype.isPrototypeOf(p);</div><div class="line"><span class="built_in">console</span>.log(p.constructor.prototype.isPrototypeOf(p));  <span class="comment">//true</span></div></pre></td></tr></table></figure>
-<ol>
-<li>propertyIsEnumerable</li>
-</ol>
-<blockquote>
-<p>  对象含有该属性，切不是继承而来，并且可以枚举 则返回true，该方法基本不用</p>
-</blockquote>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">p.propertyIsEnumerable(<span class="string">"name"</span>);</div><div class="line"><span class="built_in">console</span>.log(p.propertyIsEnumerable(<span class="string">"name"</span>));  <span class="comment">//true</span></div></pre></td></tr></table></figure>
-<blockquote>
-<p>  在ES5之后 引入了Object.defineProperty方法，可以定义属性是否可枚举</p>
-</blockquote>
-<ol>
-<li>toString</li>
-</ol>
-<blockquote>
-<p>  toString默认输出[object 构造函数名]，若是自定义构造函数，则输出[object Object]</p>
-</blockquote>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">p.toString();</div><div class="line"><span class="built_in">console</span>.log(p.toString());  <span class="comment">//[object Object]</span></div></pre></td></tr></table></figure>
-<ol>
-<li>toLocaleString</li>
-</ol>
-<blockquote>
-<p>  toLocaleString输出本地化的字符串转换，需要浏览器支持</p>
-</blockquote>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>;</div><div class="line">date.toString();</div><div class="line"><span class="built_in">console</span>.log(date.toString());<span class="comment">//Tue Jul 25 2017 21:24:02 GMT+0800 (中国标准时间)</span></div><div class="line">date.toLocaleString();</div><div class="line"><span class="built_in">console</span>.log(date.toLocaleString());<span class="comment">//2017/7/25 下午9:24:02</span></div></pre></td></tr></table></figure>
-<ol>
-<li>valueOf</li>
-</ol>
-<blockquote>
-<p>  valueOf() 方法可返回 Boolean 对象的原始值<br>  不明作用</p>
-</blockquote>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = &#123;&#125;==&#123;&#125;;</div><div class="line"><span class="built_in">console</span>.log(p.valueOf());</div><div class="line"><span class="built_in">console</span>.log(a.valueOf());</div></pre></td></tr></table></figure>
-<h3 id="prototype-常见的使用方法"><a href="#prototype-常见的使用方法" class="headerlink" title="prototype 常见的使用方法"></a>prototype 常见的使用方法</h3><blockquote>
-<p>  原型继承，就是给原型对象添加新的属性，使实例对象直接拥有该属性，即实现了继承</p>
-</blockquote>
-<ol>
-<li>利用对象的动态特性给原型添加属性</li>
-</ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">p.constructor.prototype.sayHello = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">"Hello,I'm"</span>+<span class="keyword">this</span>.name);</div><div class="line">&#125;</div><div class="line">p.sayHello();</div></pre></td></tr></table></figure>
-<ol>
-<li>替换原型对象</li>
-</ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//创建构造函数Person</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, age</span>) </span>&#123;</div><div class="line">    <span class="keyword">this</span>.name = name,</div><div class="line">    <span class="keyword">this</span>.age = age</div><div class="line">&#125;;</div><div class="line"><span class="comment">//替换Person的原型属性(old)</span></div><div class="line">Person.prototype=&#123;</div><div class="line">    <span class="attr">constructor</span>: Person,</div><div class="line">    <span class="attr">sayHi</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">"hi,I'm old"</span> + <span class="keyword">this</span>.name);</div><div class="line">    &#125;,</div><div class="line">&#125;</div><div class="line"><span class="comment">//实例化p 其原型链指向为 p-&gt;Person.prototype(old)-&gt;Object.prototype-&gt;null</span></div><div class="line"><span class="keyword">var</span> p = <span class="keyword">new</span> Person(<span class="string">"老张"</span>, <span class="number">38</span>);</div><div class="line">p.sayHi();  <span class="comment">//hi,I'm老张</span></div><div class="line"><span class="comment">//再次替换Person的原型属性(new)</span></div><div class="line">p.constructor.prototype = &#123;</div><div class="line">    <span class="attr">constructor</span>: Person,</div><div class="line">    <span class="attr">sayHi</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">"hi,I'm new"</span> + <span class="keyword">this</span>.name);</div><div class="line">    &#125;,</div><div class="line">    <span class="attr">sayHello</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">"Hello,I'm new"</span> + <span class="keyword">this</span>.name);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">//实例化p2，此时其原型链指向为 p-&gt;Person.prototype(new)-&gt;Object.prototype-&gt;null</span></div><div class="line"><span class="comment">//p的原型链指向依旧为 p-&gt;Person.prototype(old)-&gt;Object.prototype-&gt;null</span></div><div class="line"><span class="keyword">var</span> p2 = <span class="keyword">new</span> Person(<span class="string">"老王"</span>, <span class="number">38</span>);</div><div class="line">p.sayHi();      <span class="comment">//hi,I'm老张</span></div><div class="line"><span class="comment">//p.sayHello(); //p.sayHello is not a function</span></div><div class="line">p2.sayHi();     <span class="comment">//hi,I'm new老王</span></div><div class="line">p2.sayHello();  <span class="comment">//Hello,I'm new老王</span></div></pre></td></tr></table></figure>
-<blockquote>
-<p>  关于instanceof运算符</p>
-</blockquote>
-<ol>
-<li><p>语法：</p>
-<p>对象A.instancceof 函数B -&gt; boolean</p>
-</li>
-<li><p>含义：</p>
-<p>对象A 是被 函数B new出来的，返回true，反之返回false</p>
-<p>如果函数B 的原型属性(prototype)所指的对象在 对象A 的原型链上，那么就返回true，否则返回false</p>
-</li>
-</ol>
-<blockquote>
-<p>  补充</p>
-</blockquote>
-<p>构造函数Foo的原型属性Foo.prototype的<strong>proto</strong>属性指向的是Object.prototype(它构造函数的原型属性)</p>
-<p>也就是说Foo.prototype是Object实例化而来的</p>
-<p>或者说所有对象的<strong>proto</strong>属性都指向它构造函数的原型属性，它的原型对象</p>
-<p>只要有<strong>proto</strong>属性，就有它的构造函数  除了Object.prototype</p>
-
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj1 = &#123;<span class="attr">name</span>:<span class="string">"老张"</span>&#125;;</div><div class="line"><span class="keyword">var</span> obj2 = &#123;<span class="attr">name</span>:<span class="string">"老王"</span>&#125;;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span> (<span class="params">age</span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>);</div><div class="line">  <span class="built_in">console</span>.log(age);</div><div class="line">&#125;;</div><div class="line">fn.call(<span class="literal">null</span>,<span class="number">38</span>);     <span class="comment">//window</span></div><div class="line">fn.call(obj1,<span class="number">38</span>);     <span class="comment">//obj1</span></div><div class="line">fn.apply(obj2,[<span class="number">28</span>]);  <span class="comment">//obj2</span></div></pre></td></tr></table></figure>
     
 
     
@@ -614,7 +534,7 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2016/09/05/js中的继承/" id="post_nav-newer" class="prev-content">
+        <a href="/2016/06/15/js中的预解析/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -628,7 +548,7 @@
 
     <!-- Next Nav -->
     
-        <a href="/2016/08/13/XMLHttpRequest/" id="post_nav-older" class="next-content">
+        <a href="/2016/05/20/less/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
